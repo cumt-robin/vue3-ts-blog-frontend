@@ -1,0 +1,56 @@
+@mixin absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+}
+
+@mixin absolute-x-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-layout {
+    position: relative;
+    display: flex;
+    flex: 1;
+    overflow: auto;
+}
+
+@mixin flex-layout--column {
+    position: relative;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+@mixin flex-only--column {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin one-line-ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@mixin bfc-clearfix {
+    &::after,
+    &::before {
+        display: table;
+        content: "";
+    }
+    &::after {
+        clear: both;
+    }
+}

@@ -1,0 +1,189 @@
+:deep(.md-preview) {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        position: relative;
+        padding-left: 30px;
+        &::before {
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: #0670dc;
+            padding: 0 2px;
+            border-radius: 4px;
+            color: #fff;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 1.6;
+        }
+    }
+    h1 {
+        font-size: 1.6em;
+        margin: 1em 0;
+        &::before {
+            content: "h1";
+        }
+    }
+    h2 {
+        font-size: 1.4em;
+        margin: 0.8em 0;
+        &::before {
+            content: "h2";
+        }
+    }
+    h3 {
+        font-size: 1.2em;
+        margin: 0.6em 0;
+        &::before {
+            content: "h3";
+        }
+    }
+    h4 {
+        font-size: 1.1em;
+        margin: 0.5em 0;
+        &::before {
+            content: "h4";
+        }
+    }
+    h5 {
+        font-size: 1em;
+        margin: 0.4em 0;
+        &::before {
+            content: "h5";
+        }
+    }
+    h6 {
+        font-size: 1em;
+        margin: 0.4em 0;
+        &::before {
+            content: "h5";
+        }
+    }
+    ol {
+        margin: 0 0 10px 6px;
+        padding: 0 0 0 4px;
+        &:not([start]) {
+            counter-reset: order;
+        }
+        > li {
+            position: relative;
+            padding-left: 20px;
+            margin-top: 8px;
+            &::before {
+                counter-increment: order;
+                content: counter(order);
+                position: absolute;
+                left: -3px;
+                top: 3px;
+                width: 16px;
+                height: 16px;
+                line-height: 16px;
+                font-size: 12px;
+                background: #63b8ea;
+                border-radius: 50%;
+                color: #fff;
+                text-align: center;
+            }
+        }
+    }
+    ul {
+        margin: 0 0 10px 6px;
+    }
+    ul > li,
+    ul > li > ul > li {
+        position: relative;
+        padding-left: 15px;
+        margin-top: 8px;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 8px;
+            left: 2px;
+            width: 6px;
+            height: 6px;
+            background-color: #333;
+            border-radius: 100%;
+        }
+    }
+    ul > li > ul > li::before {
+        background-color: transparent;
+        border: 1px solid #ccc;
+    }
+    blockquote {
+        position: relative;
+        margin: 10px 0;
+        padding: 10px 12px 10px 34px;
+        background-color: #f8f8f8;
+        border-radius: 4px;
+        &::before {
+            content: "\201C";
+            position: absolute;
+            top: 0;
+            left: 10px;
+            font-size: 3em;
+        }
+        > p {
+            color: #666;
+            margin: 0;
+        }
+    }
+    pre > code {
+        display: block;
+        overflow-x: auto;
+        padding: 5px;
+        background: #474949;
+        color: #d1d9e1;
+    }
+    :not(pre) > code {
+        margin: 0 4px;
+        padding: 2px 4px;
+        background-color: #fff5f5;
+        color: #8e6666;
+        border-radius: 4px;
+        word-break: break-word;
+    }
+    .img-wrapper {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        > img {
+            max-width: 100%;
+            cursor: pointer;
+        }
+    }
+    hr {
+        border-style: dashed;
+        color: #ccc;
+    }
+    table {
+        border-spacing: 0;
+        font-size: 14px;
+        text-align: left;
+        margin-bottom: 10px;
+        thead tr {
+            background-color: #fbeeee;
+        }
+        th,
+        td {
+            padding: 2px 6px;
+            line-height: 1.8;
+        }
+        tbody {
+            color: #755a5a;
+            tr:nth-child(2n) {
+                background-color: #e8f7f7;
+            }
+        }
+    }
+    strong,
+    .link {
+        margin: 0 2px;
+    }
+
+    p {
+        line-height: 1.8;
+    }
+}

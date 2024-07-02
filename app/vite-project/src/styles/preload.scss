@@ -1,0 +1,4 @@
+@import "./vars.scss";
+@import "./mixins.scss";
+// 在按需加载情况下，会按需加载特定 scss，所以定制主题只要让 element-vars.scss 预先加载就行。
+// @import "./element-vars.scss";

@@ -1,0 +1,67 @@
+// Color
+// base color
+$color-white: #fff;
+$color-black: #121212;
+$color-black--dark: #000;
+$color-black--light: #444;
+$color-primary: #3b77e3;
+$color-success: #00c900;
+$color-info: #999;
+$color-warning: #f7ba2a;
+$color-danger: #ff4949;
+$color-error: #f40000;
+
+// text color
+$color-text--primary: $color-black;
+$color-text--secondary: #64686e;
+$color-text--placeholder: $color-info;
+$color-title--secondary: #aeafaf;
+$color-text--nodata: #666;
+$color-split-line: #ccc;
+
+// bg color
+$color-bg--white: $color-white;
+$color-bg--secondary: #f3f3f3;
+$color-bg--content: #d5edff;
+$color-bg--readonly: #dfdfdf;
+
+// Border
+// border color
+$color-border--base: #ccc;
+
+$border-base: 1px solid $color-border--base;
+
+// Size
+// font size
+$size-text--normal: 12px;
+$size-text--big: 22px;
+$size-nav-text: 16px;
+$size-nav-text--secondary: 14px;
+
+// font-weight
+$font-weight--normal: 400;
+$font-weight--bold: 700;
+
+// border-radius
+$border-radius--non: 0;
+$border-radius--tiny: 2px;
+$border-radius--small: 4px;
+$border-radius--middle: 10px;
+$border-radius--big: 40px;
+$border-radius--full: 100%;
+
+// box-shadow
+$base-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 0 6px rgba(0, 0, 0, 0.04);
+$light-box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+$header-box-shadow: 0 2px 9px 0 rgba(8, 45, 97, 0.24);
+
+// input
+
+// scrollbar
+$scrollbar-thumb-bg-color: rgba(255, 255, 255, 0.15);
+$scrollbar-track-bg-color: transparent;
+$scrollbar-track-shadow-color: rgba(0, 0, 0, 0.2);
+
+:root {
+    --color-primary: #3b77e3;
+}

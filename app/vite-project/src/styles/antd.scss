@@ -1,0 +1,32 @@
+.ant-pagination {
+    &.pagination-common {
+        margin-top: 20px;
+        text-align: center;
+    }
+}
+
+.ant-drawer {
+    &.drawer-comment {
+        .ant-drawer-content-wrapper {
+            max-width: 400px;
+        }
+        .ant-drawer-wrapper-body {
+            display: flex;
+            flex-direction: column;
+        }
+        .ant-drawer-body {
+            flex: 1;
+            padding: 0;
+            display: flex;
+            overflow: auto;
+        }
+    }
+}
+
+.ant-table {
+    .ant-table-scroll {
+        .ant-table-body {
+            overflow-x: auto !important;
+        }
+    }
+}

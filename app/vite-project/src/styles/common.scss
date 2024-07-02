@@ -1,0 +1,50 @@
+.flex-layout {
+    @include flex-layout;
+}
+
+.flex-center {
+    @include flex-center;
+}
+
+.flex-layout--column {
+    @include flex-layout--column;
+}
+
+.flex-align-center {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.abs-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.clearfix {
+    @include bfc-clearfix;
+}
+
+.ellipsis {
+    @include one-line-ellipsis;
+}
+
+.icon-svg.icon--aside {
+    @include flex-center;
+
+    color: #fff;
+    font-size: 24px;
+    height: 100%;
+    border-radius: 50%;
+    background-color: rgba(102, 57, 57, 0.4);
+    cursor: pointer;
+    + .icon--aside {
+        margin-top: 10px;
+    }
+}
